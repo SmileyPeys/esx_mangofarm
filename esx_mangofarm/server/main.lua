@@ -15,8 +15,8 @@ AddEventHandler('exodus_mango:pickedUpwoods', function()
 	else
 		UserAvatar = ''
 		mensahe = 'Player **'..xPlayer.name..'** Farm 1 mango '
-		PerformHttpRequest('https://discord.com/api/webhooks/893405563390656512/u-C4M_eakbVB-PjhDBEndOVj8bAWtEDm1iMK6afyYP-NzlNcSW1Q5l3Znt1i_09yaMOg', 
-		function(err, text, headers) end, 'POST', json.encode({username = 'mango Farm' ,content = mensahe,  avatar_url = UserAvatar}), { ['Content-Type'] = 'application/json' })
+		PerformHttpRequest('', 
+		function(err, text, headers) end, 'POST', json.encode({username = 'Nexus Development' ,content = mensahe,  avatar_url = UserAvatar}), { ['Content-Type'] = 'application/json' })
 
 		xPlayer.addInventoryItem(xItem.name, 1)
 	end
